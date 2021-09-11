@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0408147821DA9E5F003FA20A /* RecordAPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408147721DA9E5F003FA20A /* RecordAPayViewController.swift */; };
+		0408147C21DABDF7003FA20A /* SelectDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408147B21DABDF7003FA20A /* SelectDate.swift */; };
+		0414921921DCDF9E004E2303 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A7F17621D27E1500CFC6E2 /* AVFoundation.framework */; };
+		0414921D21DCF1DD004E2303 /* 吃東西.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0414921A21DCF1DC004E2303 /* 吃東西.mp3 */; };
+		0414921E21DCF1DD004E2303 /* 升等.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0414921B21DCF1DC004E2303 /* 升等.mp3 */; };
+		0414921F21DCF1DD004E2303 /* 小雞bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0414921C21DCF1DC004E2303 /* 小雞bgm.mp3 */; };
+		04A7F17921D27E3C00CFC6E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A7F17821D27E3B00CFC6E2 /* Foundation.framework */; };
+		04C5526021DCBF08006A5E0D /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C5525F21DCBF08006A5E0D /* SQLite.framework */; };
+		04DBD18821E10A7F005BDFCC /* showDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBD18721E10A7F005BDFCC /* showDataCell.swift */; };
+		04F9654D21CFDD8F0019CC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9654C21CFDD8F0019CC30 /* AppDelegate.swift */; };
+		04F9654F21CFDD8F0019CC30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9654E21CFDD8F0019CC30 /* ViewController.swift */; };
+		04F9655221CFDD8F0019CC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F9655021CFDD8F0019CC30 /* Main.storyboard */; };
+		04F9655421CFDD910019CC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F9655321CFDD910019CC30 /* Assets.xcassets */; };
+		04F9655721CFDD910019CC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F9655521CFDD910019CC30 /* LaunchScreen.storyboard */; };
+		04F9656221CFDD910019CC30 /* ChickenMoneyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9656121CFDD910019CC30 /* ChickenMoneyManagerTests.swift */; };
+		04F9656D21CFDD910019CC30 /* ChickenMoneyManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9656C21CFDD910019CC30 /* ChickenMoneyManagerUITests.swift */; };
+		04F9658D21D0BE180019CC30 /* setofont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F9658C21D0BE180019CC30 /* setofont.ttf */; };
+		04F9658F21D0BE4D0019CC30 /* setofont-ex.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F9658E21D0BE4D0019CC30 /* setofont-ex.ttf */; };
+		04F9659121D0D8060019CC30 /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9659021D0D8060019CC30 /* MoneyViewController.swift */; };
+		635E98DF118DB7B5EA980163 /* Pods_ChickenMoneyManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DC194BCA94D88AE33A89E4 /* Pods_ChickenMoneyManagerUITests.framework */; };
+		CD561B837305A54BD1652C54 /* Pods_ChickenMoneyManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DB6437E4856944843E2C14 /* Pods_ChickenMoneyManagerTests.framework */; };
+		EA93A9DE33D43A9F478BD094 /* Pods_ChickenMoneyManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319DD22A0A5BBBF411B94A45 /* Pods_ChickenMoneyManager.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F9655E21CFDD910019CC30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F9654121CFDD8F0019CC30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F9654821CFDD8F0019CC30;
+			remoteInfo = ChickenMoneyManager;
+		};
+		04F9656921CFDD910019CC30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F9654121CFDD8F0019CC30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F9654821CFDD8F0019CC30;
+			remoteInfo = ChickenMoneyManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0408147721DA9E5F003FA20A /* RecordAPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAPayViewController.swift; sourceTree = "<group>"; };
+		0408147B21DABDF7003FA20A /* SelectDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDate.swift; sourceTree = "<group>"; };
+		0414921A21DCF1DC004E2303 /* 吃東西.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "吃東西.mp3"; sourceTree = "<group>"; };
+		0414921B21DCF1DC004E2303 /* 升等.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "升等.mp3"; sourceTree = "<group>"; };
+		0414921C21DCF1DC004E2303 /* 小雞bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "小雞bgm.mp3"; sourceTree = "<group>"; };
+		0427E1CB21D694C6000342FB /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A7F17021D274B000CFC6E2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		04A7F17421D27DD300CFC6E2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		04A7F17621D27E1500CFC6E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04A7F17821D27E3B00CFC6E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04C5525F21DCBF08006A5E0D /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DBD18721E10A7F005BDFCC /* showDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showDataCell.swift; sourceTree = "<group>"; };
+		04F9654921CFDD8F0019CC30 /* ChickenMoneyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickenMoneyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F9654C21CFDD8F0019CC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04F9654E21CFDD8F0019CC30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04F9655121CFDD8F0019CC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F9655321CFDD910019CC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F9655621CFDD910019CC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F9655821CFDD910019CC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F9655D21CFDD910019CC30 /* ChickenMoneyManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChickenMoneyManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F9656121CFDD910019CC30 /* ChickenMoneyManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenMoneyManagerTests.swift; sourceTree = "<group>"; };
+		04F9656321CFDD910019CC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F9656821CFDD910019CC30 /* ChickenMoneyManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChickenMoneyManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F9656C21CFDD910019CC30 /* ChickenMoneyManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenMoneyManagerUITests.swift; sourceTree = "<group>"; };
+		04F9656E21CFDD910019CC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F9658C21D0BE180019CC30 /* setofont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = setofont.ttf; sourceTree = "<group>"; };
+		04F9658E21D0BE4D0019CC30 /* setofont-ex.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "setofont-ex.ttf"; sourceTree = "<group>"; };
+		04F9659021D0D8060019CC30 /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
+		06DB6437E4856944843E2C14 /* Pods_ChickenMoneyManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChickenMoneyManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E5C18E264220A470FC2E0E1 /* Pods-ChickenMoneyManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChickenMoneyManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChickenMoneyManager/Pods-ChickenMoneyManager.release.xcconfig"; sourceTree = "<group>"; };
+		1FB0D6C1A59DA56B62876A32 /* Pods-ChickenMoneyManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChickenMoneyManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChickenMoneyManagerTests/Pods-ChickenMoneyManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3167F4B97F637BD9E81C6071 /* Pods-ChickenMoneyManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChickenMoneyManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChickenMoneyManagerUITests/Pods-ChickenMoneyManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		319DD22A0A5BBBF411B94A45 /* Pods_ChickenMoneyManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChickenMoneyManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D15BE673E5204F11B2A7107 /* Pods-ChickenMoneyManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChickenMoneyManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChickenMoneyManager/Pods-ChickenMoneyManager.debug.xcconfig"; sourceTree = "<group>"; };
+		8910BC0B9CC126C30A6F3E37 /* Pods-ChickenMoneyManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChickenMoneyManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChickenMoneyManagerTests/Pods-ChickenMoneyManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B581037740D2D771D4D56746 /* Pods-ChickenMoneyManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChickenMoneyManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChickenMoneyManagerUITests/Pods-ChickenMoneyManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8DC194BCA94D88AE33A89E4 /* Pods_ChickenMoneyManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChickenMoneyManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F9654621CFDD8F0019CC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0414921921DCDF9E004E2303 /* AVFoundation.framework in Frameworks */,
+				04C5526021DCBF08006A5E0D /* SQLite.framework in Frameworks */,
+				04A7F17921D27E3C00CFC6E2 /* Foundation.framework in Frameworks */,
+				EA93A9DE33D43A9F478BD094 /* Pods_ChickenMoneyManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F9655A21CFDD910019CC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD561B837305A54BD1652C54 /* Pods_ChickenMoneyManagerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F9656521CFDD910019CC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635E98DF118DB7B5EA980163 /* Pods_ChickenMoneyManagerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A7F16F21D274AF00CFC6E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C5525F21DCBF08006A5E0D /* SQLite.framework */,
+				0427E1CB21D694C6000342FB /* SQLite.framework */,
+				04A7F17821D27E3B00CFC6E2 /* Foundation.framework */,
+				04A7F17621D27E1500CFC6E2 /* AVFoundation.framework */,
+				04A7F17421D27DD300CFC6E2 /* CoreFoundation.framework */,
+				04A7F17021D274B000CFC6E2 /* CoreText.framework */,
+				319DD22A0A5BBBF411B94A45 /* Pods_ChickenMoneyManager.framework */,
+				06DB6437E4856944843E2C14 /* Pods_ChickenMoneyManagerTests.framework */,
+				F8DC194BCA94D88AE33A89E4 /* Pods_ChickenMoneyManagerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04F9654021CFDD8F0019CC30 = {
+			isa = PBXGroup;
+			children = (
+				04F9654B21CFDD8F0019CC30 /* ChickenMoneyManager */,
+				04F9656021CFDD910019CC30 /* ChickenMoneyManagerTests */,
+				04F9656B21CFDD910019CC30 /* ChickenMoneyManagerUITests */,
+				04F9654A21CFDD8F0019CC30 /* Products */,
+				04A7F16F21D274AF00CFC6E2 /* Frameworks */,
+				9C7BD705DBC2DA9CB13B7D2B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		04F9654A21CFDD8F0019CC30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F9654921CFDD8F0019CC30 /* ChickenMoneyManager.app */,
+				04F9655D21CFDD910019CC30 /* ChickenMoneyManagerTests.xctest */,
+				04F9656821CFDD910019CC30 /* ChickenMoneyManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F9654B21CFDD8F0019CC30 /* ChickenMoneyManager */ = {
+			isa = PBXGroup;
+			children = (
+				0414921C21DCF1DC004E2303 /* 小雞bgm.mp3 */,
+				0414921B21DCF1DC004E2303 /* 升等.mp3 */,
+				0414921A21DCF1DC004E2303 /* 吃東西.mp3 */,
+				04F9658E21D0BE4D0019CC30 /* setofont-ex.ttf */,
+				04F9658C21D0BE180019CC30 /* setofont.ttf */,
+				04F9654C21CFDD8F0019CC30 /* AppDelegate.swift */,
+				04F9654E21CFDD8F0019CC30 /* ViewController.swift */,
+				04F9659021D0D8060019CC30 /* MoneyViewController.swift */,
+				0408147721DA9E5F003FA20A /* RecordAPayViewController.swift */,
+				0408147B21DABDF7003FA20A /* SelectDate.swift */,
+				04F9655021CFDD8F0019CC30 /* Main.storyboard */,
+				04F9655321CFDD910019CC30 /* Assets.xcassets */,
+				04F9655521CFDD910019CC30 /* LaunchScreen.storyboard */,
+				04F9655821CFDD910019CC30 /* Info.plist */,
+				04DBD18721E10A7F005BDFCC /* showDataCell.swift */,
+			);
+			path = ChickenMoneyManager;
+			sourceTree = "<group>";
+		};
+		04F9656021CFDD910019CC30 /* ChickenMoneyManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				04F9656121CFDD910019CC30 /* ChickenMoneyManagerTests.swift */,
+				04F9656321CFDD910019CC30 /* Info.plist */,
+			);
+			path = ChickenMoneyManagerTests;
+			sourceTree = "<group>";
+		};
+		04F9656B21CFDD910019CC30 /* ChickenMoneyManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04F9656C21CFDD910019CC30 /* ChickenMoneyManagerUITests.swift */,
+				04F9656E21CFDD910019CC30 /* Info.plist */,
+			);
+			path = ChickenMoneyManagerUITests;
+			sourceTree = "<group>";
+		};
+		9C7BD705DBC2DA9CB13B7D2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D15BE673E5204F11B2A7107 /* Pods-ChickenMoneyManager.debug.xcconfig */,
+				0E5C18E264220A470FC2E0E1 /* Pods-ChickenMoneyManager.release.xcconfig */,
+				1FB0D6C1A59DA56B62876A32 /* Pods-ChickenMoneyManagerTests.debug.xcconfig */,
+				8910BC0B9CC126C30A6F3E37 /* Pods-ChickenMoneyManagerTests.release.xcconfig */,
+				B581037740D2D771D4D56746 /* Pods-ChickenMoneyManagerUITests.debug.xcconfig */,
+				3167F4B97F637BD9E81C6071 /* Pods-ChickenMoneyManagerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F9654821CFDD8F0019CC30 /* ChickenMoneyManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F9657121CFDD910019CC30 /* Build configuration list for PBXNativeTarget "ChickenMoneyManager" */;
+			buildPhases = (
+				751BF51789533E0FBC260A44 /* [CP] Check Pods Manifest.lock */,
+				04F9654521CFDD8F0019CC30 /* Sources */,
+				04F9654621CFDD8F0019CC30 /* Frameworks */,
+				04F9654721CFDD8F0019CC30 /* Resources */,
+				3A1899BCDB7710ED22428A6B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChickenMoneyManager;
+			productName = ChickenMoneyManager;
+			productReference = 04F9654921CFDD8F0019CC30 /* ChickenMoneyManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04F9655C21CFDD910019CC30 /* ChickenMoneyManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F9657421CFDD910019CC30 /* Build configuration list for PBXNativeTarget "ChickenMoneyManagerTests" */;
+			buildPhases = (
+				0007648C20579377E8B13D40 /* [CP] Check Pods Manifest.lock */,
+				04F9655921CFDD910019CC30 /* Sources */,
+				04F9655A21CFDD910019CC30 /* Frameworks */,
+				04F9655B21CFDD910019CC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F9655F21CFDD910019CC30 /* PBXTargetDependency */,
+			);
+			name = ChickenMoneyManagerTests;
+			productName = ChickenMoneyManagerTests;
+			productReference = 04F9655D21CFDD910019CC30 /* ChickenMoneyManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04F9656721CFDD910019CC30 /* ChickenMoneyManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F9657721CFDD910019CC30 /* Build configuration list for PBXNativeTarget "ChickenMoneyManagerUITests" */;
+			buildPhases = (
+				D7785C14D8BEC85EF112D764 /* [CP] Check Pods Manifest.lock */,
+				04F9656421CFDD910019CC30 /* Sources */,
+				04F9656521CFDD910019CC30 /* Frameworks */,
+				04F9656621CFDD910019CC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F9656A21CFDD910019CC30 /* PBXTargetDependency */,
+			);
+			name = ChickenMoneyManagerUITests;
+			productName = ChickenMoneyManagerUITests;
+			productReference = 04F9656821CFDD910019CC30 /* ChickenMoneyManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F9654121CFDD8F0019CC30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = CYCU;
+				TargetAttributes = {
+					04F9654821CFDD8F0019CC30 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					04F9655C21CFDD910019CC30 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 04F9654821CFDD8F0019CC30;
+					};
+					04F9656721CFDD910019CC30 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 04F9654821CFDD8F0019CC30;
+					};
+				};
+			};
+			buildConfigurationList = 04F9654421CFDD8F0019CC30 /* Build configuration list for PBXProject "ChickenMoneyManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F9654021CFDD8F0019CC30;
+			productRefGroup = 04F9654A21CFDD8F0019CC30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F9654821CFDD8F0019CC30 /* ChickenMoneyManager */,
+				04F9655C21CFDD910019CC30 /* ChickenMoneyManagerTests */,
+				04F9656721CFDD910019CC30 /* ChickenMoneyManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F9654721CFDD8F0019CC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0414921D21DCF1DD004E2303 /* 吃東西.mp3 in Resources */,
+				04F9658D21D0BE180019CC30 /* setofont.ttf in Resources */,
+				0414921F21DCF1DD004E2303 /* 小雞bgm.mp3 in Resources */,
+				04F9655721CFDD910019CC30 /* LaunchScreen.storyboard in Resources */,
+				04F9655421CFDD910019CC30 /* Assets.xcassets in Resources */,
+				0414921E21DCF1DD004E2303 /* 升等.mp3 in Resources */,
+				04F9655221CFDD8F0019CC30 /* Main.storyboard in Resources */,
+				04F9658F21D0BE4D0019CC30 /* setofont-ex.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F9655B21CFDD910019CC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F9656621CFDD910019CC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0007648C20579377E8B13D40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChickenMoneyManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A1899BCDB7710ED22428A6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChickenMoneyManager/Pods-ChickenMoneyManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChickenMoneyManager/Pods-ChickenMoneyManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		751BF51789533E0FBC260A44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChickenMoneyManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7785C14D8BEC85EF112D764 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChickenMoneyManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F9654521CFDD8F0019CC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F9654F21CFDD8F0019CC30 /* ViewController.swift in Sources */,
+				04F9654D21CFDD8F0019CC30 /* AppDelegate.swift in Sources */,
+				0408147821DA9E5F003FA20A /* RecordAPayViewController.swift in Sources */,
+				0408147C21DABDF7003FA20A /* SelectDate.swift in Sources */,
+				04DBD18821E10A7F005BDFCC /* showDataCell.swift in Sources */,
+				04F9659121D0D8060019CC30 /* MoneyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F9655921CFDD910019CC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F9656221CFDD910019CC30 /* ChickenMoneyManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F9656421CFDD910019CC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F9656D21CFDD910019CC30 /* ChickenMoneyManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F9655F21CFDD910019CC30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F9654821CFDD8F0019CC30 /* ChickenMoneyManager */;
+			targetProxy = 04F9655E21CFDD910019CC30 /* PBXContainerItemProxy */;
+		};
+		04F9656A21CFDD910019CC30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F9654821CFDD8F0019CC30 /* ChickenMoneyManager */;
+			targetProxy = 04F9656921CFDD910019CC30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04F9655021CFDD8F0019CC30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F9655121CFDD8F0019CC30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04F9655521CFDD910019CC30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F9655621CFDD910019CC30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04F9656F21CFDD910019CC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F9657021CFDD910019CC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F9657221CFDD910019CC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D15BE673E5204F11B2A7107 /* Pods-ChickenMoneyManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ChickenMoneyManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cycu.student5.ChickenMoneyManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		04F9657321CFDD910019CC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5C18E264220A470FC2E0E1 /* Pods-ChickenMoneyManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ChickenMoneyManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cycu.student5.ChickenMoneyManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		04F9657521CFDD910019CC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB0D6C1A59DA56B62876A32 /* Pods-ChickenMoneyManagerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChickenMoneyManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cycu.student5.ChickenMoneyManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChickenMoneyManager.app/ChickenMoneyManager";
+			};
+			name = Debug;
+		};
+		04F9657621CFDD910019CC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8910BC0B9CC126C30A6F3E37 /* Pods-ChickenMoneyManagerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChickenMoneyManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cycu.student5.ChickenMoneyManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChickenMoneyManager.app/ChickenMoneyManager";
+			};
+			name = Release;
+		};
+		04F9657821CFDD910019CC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B581037740D2D771D4D56746 /* Pods-ChickenMoneyManagerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChickenMoneyManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cycu.student5.ChickenMoneyManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChickenMoneyManager;
+			};
+			name = Debug;
+		};
+		04F9657921CFDD910019CC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3167F4B97F637BD9E81C6071 /* Pods-ChickenMoneyManagerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChickenMoneyManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cycu.student5.ChickenMoneyManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChickenMoneyManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F9654421CFDD8F0019CC30 /* Build configuration list for PBXProject "ChickenMoneyManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F9656F21CFDD910019CC30 /* Debug */,
+				04F9657021CFDD910019CC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F9657121CFDD910019CC30 /* Build configuration list for PBXNativeTarget "ChickenMoneyManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F9657221CFDD910019CC30 /* Debug */,
+				04F9657321CFDD910019CC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F9657421CFDD910019CC30 /* Build configuration list for PBXNativeTarget "ChickenMoneyManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F9657521CFDD910019CC30 /* Debug */,
+				04F9657621CFDD910019CC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F9657721CFDD910019CC30 /* Build configuration list for PBXNativeTarget "ChickenMoneyManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F9657821CFDD910019CC30 /* Debug */,
+				04F9657921CFDD910019CC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F9654121CFDD8F0019CC30 /* Project object */;
+}

@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="setofont.ttf">
+            <string>SetoFont</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChickenMoneyManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYE-vq-P5E">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="948"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hja-nx-QJL">
+                                <rect key="frame" x="0.0" y="927" width="385" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <state key="normal" title="小雞" image="chick">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SwitchChicken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEi-RI-Crk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83V-KN-G8S">
+                                <rect key="frame" x="384" y="927" width="384" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.99607843137254903" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <state key="normal" title="記帳" image="piggy-bank">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Tn-zc-h2n" kind="modal" id="dXM-ET-kr5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kP8-Oo-E8C">
+                                <rect key="frame" x="20" y="611" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                                <state key="normal" title="LevelUp">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClickLevelUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LXb-Kr-p43"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lv 100 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqQ-Md-Q4X">
+                                <rect key="frame" x="578" y="48" width="170" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                <color key="textColor" red="0.45098039215686275" green="0.23529411764705882" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KUk-Vw-yOl">
+                                <rect key="frame" x="558" y="38" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCW-Yb-qBQ">
+                                <rect key="frame" x="20" y="48" width="250" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                <color key="textColor" red="0.45098039220000002" green="0.23529411759999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XNd-At-jFm">
+                                <rect key="frame" x="20" y="38" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3eM-Ke-T3c">
+                                <rect key="frame" x="243" y="306" width="400" height="550"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YbL-Jq-FYE">
+                                <rect key="frame" x="119" y="225" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbp-7M-2d2">
+                                <rect key="frame" x="139" y="283" width="201" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🍗" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRU-ei-bYi">
+                                <rect key="frame" x="367" y="48" width="166" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.99215686270000003" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLY-H9-9Od">
+                                <rect key="frame" x="310" y="38" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrI-pX-37P">
+                                <rect key="frame" x="20" y="453" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                                <state key="normal" title="GiveFood">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClickGiveFoodButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2a7-zm-YnP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTz-US-pK5">
+                                <rect key="frame" x="20" y="769" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                                <state key="normal" title="Shop">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClickShopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dhu-rf-tUH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US6-a3-0kX">
+                                <rect key="frame" x="676" y="158" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="speaker"/>
+                                <connections>
+                                    <action selector="SoundOnandOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOm-E1-Rer"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Xuc-sw-Fru" appends="YES" id="0pZ-mG-vc6"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="srJ-yN-y8m"/>
+                    <connections>
+                        <outlet property="CancelButton" destination="Oc4-Ik-q6X" id="vC9-gT-2AO"/>
+                        <outlet property="ChickenButton" destination="hja-nx-QJL" id="1m6-0a-zPK"/>
+                        <outlet property="ChickenSays" destination="YbL-Jq-FYE" id="uEm-1K-HJ7"/>
+                        <outlet property="FoodLevelupButton" destination="X3h-Jb-7nh" id="IzV-AG-NKa"/>
+                        <outlet property="GiveFood" destination="yrI-pX-37P" id="o2h-86-919"/>
+                        <outlet property="GrassBackGround" destination="eYE-vq-P5E" id="AIi-i1-idi"/>
+                        <outlet property="HiddenEvolutionView" destination="bKq-XX-RYj" id="S5G-oR-Pw9"/>
+                        <outlet property="LevelUpbutton" destination="kP8-Oo-E8C" id="UAO-U0-yzP"/>
+                        <outlet property="Money" destination="xCW-Yb-qBQ" id="UrH-sf-3LP"/>
+                        <outlet property="MoneyLevelUpButton" destination="nKy-Ll-57g" id="5LP-IE-NsV"/>
+                        <outlet property="NoEvolution" destination="YQD-NA-9K7" id="OkJ-hn-jWa"/>
+                        <outlet property="OurChicken" destination="3eM-Ke-T3c" id="UNQ-xT-hO2"/>
+                        <outlet property="PowerLevelUpButton" destination="rxJ-DK-7WF" id="yse-ny-DxN"/>
+                        <outlet property="ShopButton" destination="DTz-US-pK5" id="6q0-IL-3kT"/>
+                        <outlet property="ShopView" destination="2SU-7M-FBB" id="mmB-er-Gb2"/>
+                        <outlet property="SoundOnandOffButton" destination="US6-a3-0kX" id="UVq-Zp-O4i"/>
+                        <outlet property="YesEvolution" destination="f2S-ki-1Dl" id="uJ2-I7-ulE"/>
+                        <outlet property="chickinshop" destination="VSr-xj-1vx" id="as3-EL-3Ii"/>
+                        <outlet property="coin" destination="XNd-At-jFm" id="BT5-55-PkE"/>
+                        <outlet property="fries" destination="mLY-H9-9Od" id="bjs-dL-XF7"/>
+                        <outlet property="hunger" destination="zRU-ei-bYi" id="LnT-V1-1VA"/>
+                        <outlet property="hungry_description" destination="TNE-Dt-Heu" id="x1h-q6-JxW"/>
+                        <outlet property="hungry_useTime" destination="ug4-Gt-12i" id="2cA-VH-M1g"/>
+                        <outlet property="level" destination="KUk-Vw-yOl" id="fAU-yF-eGx"/>
+                        <outlet property="levelup" destination="eqQ-Md-Q4X" id="5Kk-Le-tVL"/>
+                        <outlet property="levelup_description" destination="S7O-qP-P34" id="c7Z-rn-aIY"/>
+                        <outlet property="levelup_useTime" destination="NEG-ej-Xo3" id="L79-0z-k4W"/>
+                        <outlet property="moneyLevelup_useTime" destination="BQr-3d-GUe" id="aro-rj-DSe"/>
+                        <outlet property="money_description" destination="sUE-lR-fEV" id="QmK-Dj-bkF"/>
+                        <outlet property="pRootView" destination="8bC-Xf-vdC" id="7rJ-kY-1pb"/>
+                        <outlet property="say_word" destination="cbp-7M-2d2" id="YXd-pS-W2m"/>
+                        <outlet property="stickpaste1" destination="yro-8F-jTd" id="PzL-VZ-Dtr"/>
+                        <outlet property="stickpaste2" destination="OSc-G3-EzK" id="6DZ-Bi-VJc"/>
+                        <outlet property="stickpaste3" destination="51L-VM-U5r" id="rtQ-IS-rq1"/>
+                        <outlet property="warninglabel" destination="Hsy-Sf-ULE" id="XWP-iD-CzS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Xuc-sw-Fru">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="flm-ma-nsv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <view contentMode="scaleToFill" id="2SU-7M-FBB">
+                    <rect key="frame" x="0.0" y="0.0" width="585" height="330"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yro-8F-jTd">
+                            <rect key="frame" x="20" y="72" width="180" height="115"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="Ig7-uz-gDe"/>
+                                <constraint firstAttribute="height" constant="115" id="YoS-Jo-6LB"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OSc-G3-EzK">
+                            <rect key="frame" x="202" y="72" width="180" height="115"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="115" id="8Vw-if-XI0"/>
+                                <constraint firstAttribute="width" constant="180" id="DGo-Ds-Hn8"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="51L-VM-U5r">
+                            <rect key="frame" x="385" y="72" width="180" height="115"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="UqR-v9-4kq"/>
+                                <constraint firstAttribute="height" constant="115" id="srK-zE-ZrW"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc4-Ik-q6X">
+                            <rect key="frame" x="425" y="12" width="150" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="Kez-BQ-mcD"/>
+                                <constraint firstAttribute="width" constant="150" id="ZZl-N7-1eI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ClickCancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1sg-Wf-ziO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxJ-DK-7WF">
+                            <rect key="frame" x="35" y="165" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="Oc4-kp-QJi"/>
+                                <constraint firstAttribute="width" constant="150" id="ZKP-tZ-ox6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                            <state key="normal" title="力量升級" backgroundImage="盤子">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ClickPowerUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yvI-QV-95k"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-Jb-7nh">
+                            <rect key="frame" x="400" y="165" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="ces-r1-dLm"/>
+                                <constraint firstAttribute="height" constant="150" id="hRa-eC-NJZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                            <state key="normal" title="食物升級" backgroundImage="盤子">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ClickFoodLevelUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mfy-cj-g2X"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已使用次數:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ug4-Gt-12i">
+                            <rect key="frame" x="400" y="155" width="150" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="2TQ-Ll-mXW"/>
+                                <constraint firstAttribute="width" constant="150" id="fe0-7w-N0Q"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKy-Ll-57g">
+                            <rect key="frame" x="217" y="165" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="6zQ-EK-V6g"/>
+                                <constraint firstAttribute="height" constant="150" id="yOo-gK-9kV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                            <state key="normal" title="金錢升級" backgroundImage="盤子">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ClickMoneyLevelUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j22-4w-WK5"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已使用次數:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQr-3d-GUe">
+                            <rect key="frame" x="217" y="155" width="150" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="ZoV-z1-mul"/>
+                                <constraint firstAttribute="height" constant="20" id="fbc-hO-yPp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已使用次數:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEG-ej-Xo3">
+                            <rect key="frame" x="35" y="155" width="150" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="DUa-4V-o30"/>
+                                <constraint firstAttribute="width" constant="150" id="Vgt-iD-eio"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VSr-xj-1vx">
+                            <rect key="frame" x="95" y="0.0" width="280" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="l2J-rH-zlj"/>
+                                <constraint firstAttribute="width" constant="280" id="r2K-v0-HMc"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7O-qP-P34">
+                            <rect key="frame" x="35" y="98" width="150" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="lgI-ac-eLp"/>
+                                <constraint firstAttribute="width" constant="150" id="r92-4T-nyL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUE-lR-fEV">
+                            <rect key="frame" x="217" y="98" width="150" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="EGt-At-w9S"/>
+                                <constraint firstAttribute="width" constant="150" id="QvY-LL-wFv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNE-Dt-Heu">
+                            <rect key="frame" x="400" y="98" width="150" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Oso-Dv-F8a"/>
+                                <constraint firstAttribute="width" constant="150" id="XQ9-Qm-j0N"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ug4-Gt-12i" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="155" id="1p4-Sq-Slr"/>
+                        <constraint firstAttribute="trailing" secondItem="51L-VM-U5r" secondAttribute="trailing" constant="20" id="33N-zd-Pzl"/>
+                        <constraint firstItem="sUE-lR-fEV" firstAttribute="centerX" secondItem="2SU-7M-FBB" secondAttribute="centerX" id="52m-QX-crN"/>
+                        <constraint firstItem="OSc-G3-EzK" firstAttribute="centerX" secondItem="2SU-7M-FBB" secondAttribute="centerX" id="7mN-x0-gmT"/>
+                        <constraint firstItem="yro-8F-jTd" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="72" id="APA-cm-5wZ"/>
+                        <constraint firstItem="BQr-3d-GUe" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="155" id="At4-sB-gZB"/>
+                        <constraint firstItem="Oc4-Ik-q6X" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="12" id="GUr-0W-k6I"/>
+                        <constraint firstItem="BQr-3d-GUe" firstAttribute="centerX" secondItem="2SU-7M-FBB" secondAttribute="centerX" id="Jsy-wg-Med"/>
+                        <constraint firstItem="v4a-TP-5JO" firstAttribute="trailing" secondItem="X3h-Jb-7nh" secondAttribute="trailing" constant="35" id="LPB-X6-Uye"/>
+                        <constraint firstAttribute="trailing" secondItem="TNE-Dt-Heu" secondAttribute="trailing" constant="35" id="MnQ-I9-Pgl"/>
+                        <constraint firstItem="NEG-ej-Xo3" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="155" id="O9b-ZT-ZOg"/>
+                        <constraint firstItem="sUE-lR-fEV" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="98" id="SEi-8e-cf6"/>
+                        <constraint firstAttribute="trailing" secondItem="ug4-Gt-12i" secondAttribute="trailing" constant="35" id="SK7-J5-m2O"/>
+                        <constraint firstItem="S7O-qP-P34" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="98" id="Wwn-aU-N2v"/>
+                        <constraint firstItem="rxJ-DK-7WF" firstAttribute="top" secondItem="v4a-TP-5JO" secondAttribute="top" constant="145" id="YhT-yC-CV1"/>
+                        <constraint firstItem="VSr-xj-1vx" firstAttribute="leading" secondItem="2SU-7M-FBB" secondAttribute="leading" constant="95" id="ZA7-ai-JM6"/>
+                        <constraint firstItem="X3h-Jb-7nh" firstAttribute="top" secondItem="v4a-TP-5JO" secondAttribute="top" constant="145" id="e5M-Xy-RvR"/>
+                        <constraint firstItem="VSr-xj-1vx" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" id="fYp-5o-7oE"/>
+                        <constraint firstItem="NEG-ej-Xo3" firstAttribute="leading" secondItem="2SU-7M-FBB" secondAttribute="leading" constant="35" id="fsq-EB-ypn"/>
+                        <constraint firstItem="OSc-G3-EzK" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="72" id="gic-Vx-aTu"/>
+                        <constraint firstItem="rxJ-DK-7WF" firstAttribute="leading" secondItem="v4a-TP-5JO" secondAttribute="leading" constant="35" id="h8P-aK-K3g"/>
+                        <constraint firstItem="v4a-TP-5JO" firstAttribute="trailing" secondItem="Oc4-Ik-q6X" secondAttribute="trailing" constant="10" id="imY-Xp-bSX"/>
+                        <constraint firstItem="S7O-qP-P34" firstAttribute="leading" secondItem="2SU-7M-FBB" secondAttribute="leading" constant="35" id="kRG-b0-ngk"/>
+                        <constraint firstItem="TNE-Dt-Heu" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="98" id="kUW-8v-pWh"/>
+                        <constraint firstItem="nKy-Ll-57g" firstAttribute="top" secondItem="v4a-TP-5JO" secondAttribute="top" constant="145" id="l4H-6s-Q33"/>
+                        <constraint firstItem="nKy-Ll-57g" firstAttribute="centerX" secondItem="2SU-7M-FBB" secondAttribute="centerX" id="p9J-HB-plA"/>
+                        <constraint firstItem="yro-8F-jTd" firstAttribute="leading" secondItem="2SU-7M-FBB" secondAttribute="leading" constant="20" id="vCO-8b-DMM"/>
+                        <constraint firstItem="51L-VM-U5r" firstAttribute="top" secondItem="2SU-7M-FBB" secondAttribute="top" constant="72" id="yTv-bg-DwN"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="v4a-TP-5JO"/>
+                </view>
+                <view contentMode="scaleToFill" id="bKq-XX-RYj">
+                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2S-ki-1Dl">
+                            <rect key="frame" x="248" y="143" width="75" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                            <state key="normal" title="確定！">
+                                <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ClickYesEvolutionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zo7-LY-wzN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQD-NA-9K7">
+                            <rect key="frame" x="32" y="151" width="159" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                            <state key="normal" title="考慮一下...">
+                                <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ClickNoEvolutionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6j-ws-JUH"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="注意！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jby-GM-MdB">
+                            <rect key="frame" x="149" y="5" width="90" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                            <color key="textColor" red="0.90588235294117647" green="0.33333333333333331" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="warning" translatesAutoresizingMaskIntoConstraints="NO" id="4GJ-KZ-Jlc">
+                            <rect key="frame" x="32" y="52" width="70" height="70"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你已達成條件是否讓小雞進入下個階段?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsy-Sf-ULE">
+                            <rect key="frame" x="110" y="39" width="225" height="96"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99953407049999998" green="0.95663831884307293" blue="0.52891722665267993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <viewLayoutGuide key="safeArea" id="Ixe-Rv-Qro"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="25.78125" y="37.5"/>
+        </scene>
+        <!--Money View Controller-->
+        <scene sceneID="hjc-kZ-gyH">
+            <objects>
+                <viewController id="6Tn-zc-h2n" customClass="MoneyViewController" customModule="ChickenMoneyManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wdn-gH-wYS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1yU-ei-jxM">
+                                <rect key="frame" x="54" y="49" width="659" height="873"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45098039215686275" green="0.77647058823529413" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MaindataCell" rowHeight="110" id="AOH-wx-bJh" customClass="showDataCell" customModule="ChickenMoneyManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="659" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AOH-wx-bJh" id="QWw-J8-MUH" customClass="showDataCellTableViewCell" customModule="ChickenMoneyManager" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="659" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPQ-G6-M3f">
+                                                    <rect key="frame" x="452" y="42.5" width="192" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="192" id="Gz3-dH-XEv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pn-Xu-zeZ">
+                                                    <rect key="frame" x="92" y="42.5" width="182" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="182" id="q95-Ja-9tq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NPQ-G6-M3f" firstAttribute="trailing" secondItem="QWw-J8-MUH" secondAttribute="trailingMargin" id="4C3-jR-nvx"/>
+                                                <constraint firstItem="5Pn-Xu-zeZ" firstAttribute="leading" secondItem="QWw-J8-MUH" secondAttribute="leadingMargin" constant="77" id="kdF-Rk-1Nu"/>
+                                                <constraint firstItem="NPQ-G6-M3f" firstAttribute="centerY" secondItem="QWw-J8-MUH" secondAttribute="centerY" id="saX-pz-3xc"/>
+                                                <constraint firstItem="5Pn-Xu-zeZ" firstAttribute="centerY" secondItem="QWw-J8-MUH" secondAttribute="centerY" id="xZ3-ca-I8O"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemLabel" destination="5Pn-Xu-zeZ" id="oSh-sK-syg"/>
+                                            <outlet property="moneyLabel" destination="NPQ-G6-M3f" id="0Es-yf-mAE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="spaceCell" rowHeight="10" id="cgr-VP-6dK">
+                                        <rect key="frame" x="0.0" y="138" width="659" height="10"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cgr-VP-6dK" id="cIT-rp-btd">
+                                            <rect key="frame" x="0.0" y="0.0" width="659" height="10"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="selectedBackgroundView" destination="dLX-Rt-leq" id="CnE-hA-pCJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6Tn-zc-h2n" id="CKF-TO-XtM"/>
+                                    <outlet property="delegate" destination="6Tn-zc-h2n" id="BOV-so-SkC"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ls5-d0-ie6">
+                                <rect key="frame" x="0.0" y="924" width="384" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <state key="normal" title="小雞" image="chick">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="DVx-CE-yp4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj0-Yz-E2a">
+                                <rect key="frame" x="384" y="924" width="384" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.99607843137254903" blue="0.58271835426879082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <state key="normal" title="記帳" image="piggy-bank">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SwitchMoney:" destination="6Tn-zc-h2n" eventType="touchUpInside" id="88X-4J-U1w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOa-Qh-Gag">
+                                <rect key="frame" x="642" y="806" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98526602983474731" green="0.98041492700576782" blue="0.017303774133324623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="75"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addItem:" destination="6Tn-zc-h2n" eventType="touchUpInside" id="cZt-vu-hzz"/>
+                                    <segue destination="aCg-GW-DeR" kind="modal" id="2Zp-9J-wNM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fW-1u-iuo">
+                                <rect key="frame" x="642" y="699" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9852660298" green="0.98041492699999999" blue="0.017303774130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="garbage">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addItem:" destination="6Tn-zc-h2n" eventType="touchUpInside" id="J0k-E4-Mu1"/>
+                                    <action selector="deleteItem:" destination="6Tn-zc-h2n" eventType="touchUpInside" id="oWF-cU-CKj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cs1-JP-QpU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lWt-Io-PB8"/>
+                    <connections>
+                        <outlet property="Backgroundview" destination="wdn-gH-wYS" id="JRV-7v-GLn"/>
+                        <outlet property="CreateButton" destination="UOa-Qh-Gag" id="dGk-Xy-CrW"/>
+                        <outlet property="MoneyButton" destination="fj0-Yz-E2a" id="7GR-zn-LY0"/>
+                        <outlet property="TrashButton" destination="6fW-1u-iuo" id="xqB-jc-SoS"/>
+                        <outlet property="showTable" destination="1yU-ei-jxM" id="JG5-pt-oMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmn-5a-fNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="dLX-Rt-leq">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.47843137250000001" green="0.78039215689999997" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="0M1-M4-A4x"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="751.5625" y="37.5"/>
+        </scene>
+        <!--RecordA Pay View Controller-->
+        <scene sceneID="Fur-Rf-xq7">
+            <objects>
+                <viewController id="aCg-GW-DeR" customClass="RecordAPayViewController" customModule="ChickenMoneyManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMm-Gt-PL6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日期" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baB-Ak-XLr">
+                                <rect key="frame" x="0.0" y="127" width="300" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="項目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJC-aH-ZbO">
+                                <rect key="frame" x="3" y="563" width="300" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7yP-hG-KJT">
+                                <rect key="frame" x="39" y="559" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="金額" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08f-k7-0zi">
+                                <rect key="frame" x="0.0" y="714" width="300" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sC6-Gl-5lf">
+                                <rect key="frame" x="241" y="721" width="286" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dav-29-8gu"/>
+                                    <constraint firstAttribute="width" constant="286" id="dcZ-Ym-XLz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8e-zU-3o4">
+                                <rect key="frame" x="239" y="132" width="286" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="36"/>
+                                <state key="normal" title="選擇"/>
+                                <connections>
+                                    <segue destination="q5W-Dp-TYD" kind="popoverPresentation" identifier="DateSelect" popoverAnchorView="J8e-zU-3o4" id="Oc8-52-uk5">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="來記帳吧！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6X-1k-Fts">
+                                <rect key="frame" x="0.0" y="20" width="768" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47843137254901963" green="0.77647058823529413" blue="0.58039215686274515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z3i-mr-cYH">
+                                <rect key="frame" x="166" y="274" width="520" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DND-Vo-gSP"/>
+                                    <constraint firstAttribute="width" constant="520" id="xSj-Q1-dW9"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X5g-dL-1jd">
+                                <rect key="frame" x="166" y="415" width="520" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="520" id="hzL-a1-eGk"/>
+                                    <constraint firstAttribute="height" constant="50" id="qDC-WB-JM7"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWE-qW-q6l">
+                                <rect key="frame" x="479" y="845" width="101" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <state key="normal" title="確定"/>
+                                <connections>
+                                    <action selector="returnData:" destination="aCg-GW-DeR" eventType="touchUpInside" id="Y07-ui-lq0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSS-qB-RyY">
+                                <rect key="frame" x="185" y="845" width="101" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="35"/>
+                                <state key="normal" title="取消"/>
+                                <connections>
+                                    <action selector="returnCancel:" destination="aCg-GW-DeR" eventType="touchUpInside" id="2hZ-ia-yIJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x1j-L5-lEv">
+                                <rect key="frame" x="58" y="210" width="648" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfn-2M-me6">
+                                <rect key="frame" x="60" y="351" width="648" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7WR-6D-L3L">
+                                <rect key="frame" x="58" y="495" width="648" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mie-lE-HQr">
+                                <rect key="frame" x="60" y="643" width="648" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tf9-T9-UzI">
+                                <rect key="frame" x="39" y="123" width="63" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gu-YX-GA5">
+                                <rect key="frame" x="39" y="267" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UP3-ax-fFO">
+                                <rect key="frame" x="39" y="408" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sa8-iF-DOn">
+                                <rect key="frame" x="39" y="710" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2m-PE-EB7">
+                                <rect key="frame" x="241" y="589" width="286" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="DjQ-R2-tpM"/>
+                                    <constraint firstAttribute="height" constant="50" id="JVO-ER-llU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="1" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X5g-dL-1jd" firstAttribute="top" secondItem="OMm-Gt-PL6" secondAttribute="top" constant="423" id="4vn-pI-deV"/>
+                            <constraint firstItem="a2m-PE-EB7" firstAttribute="top" secondItem="OMm-Gt-PL6" secondAttribute="top" constant="568" id="51R-zz-tRm"/>
+                            <constraint firstItem="kct-rq-UnS" firstAttribute="trailing" secondItem="a2m-PE-EB7" secondAttribute="trailing" constant="238" id="CKG-Hh-C4q"/>
+                            <constraint firstItem="kct-rq-UnS" firstAttribute="trailing" secondItem="X5g-dL-1jd" secondAttribute="trailing" constant="82" id="F9a-7h-mWU"/>
+                            <constraint firstItem="sC6-Gl-5lf" firstAttribute="top" secondItem="OMm-Gt-PL6" secondAttribute="top" constant="721" id="G4E-Uy-moQ"/>
+                            <constraint firstItem="X5g-dL-1jd" firstAttribute="leading" secondItem="OMm-Gt-PL6" secondAttribute="trailing" constant="-602" id="PMw-tN-z41"/>
+                            <constraint firstItem="Z3i-mr-cYH" firstAttribute="leading" secondItem="OMm-Gt-PL6" secondAttribute="trailing" constant="-602" id="RH9-63-ckm"/>
+                            <constraint firstItem="a2m-PE-EB7" firstAttribute="leading" secondItem="OMm-Gt-PL6" secondAttribute="trailing" constant="-524" id="SWh-8C-cd0"/>
+                            <constraint firstItem="kct-rq-UnS" firstAttribute="trailing" secondItem="Z3i-mr-cYH" secondAttribute="trailing" constant="82" id="b1d-IU-qOy"/>
+                            <constraint firstItem="Z3i-mr-cYH" firstAttribute="top" secondItem="OMm-Gt-PL6" secondAttribute="top" constant="275" id="jzb-cO-sCM"/>
+                            <constraint firstItem="sC6-Gl-5lf" firstAttribute="leading" secondItem="OMm-Gt-PL6" secondAttribute="trailing" constant="-527" id="xJ3-JW-IOL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kct-rq-UnS"/>
+                    </view>
+                    <connections>
+                        <outlet property="APayView" destination="OMm-Gt-PL6" id="DWR-Cw-eBX"/>
+                        <outlet property="APaytitle" destination="t6X-1k-Fts" id="Qpw-KD-0ul"/>
+                        <outlet property="CancelButton" destination="pSS-qB-RyY" id="XUF-2g-7mL"/>
+                        <outlet property="DateButton" destination="J8e-zU-3o4" id="Fis-fq-huR"/>
+                        <outlet property="Line1" destination="x1j-L5-lEv" id="ABJ-Yy-ONv"/>
+                        <outlet property="Line2" destination="cfn-2M-me6" id="RmD-vE-g2w"/>
+                        <outlet property="Line3" destination="7WR-6D-L3L" id="Usw-bB-0cX"/>
+                        <outlet property="Line4" destination="mie-lE-HQr" id="LKR-Mk-1n0"/>
+                        <outlet property="Money_textField" destination="sC6-Gl-5lf" id="8pA-24-kTr"/>
+                        <outlet property="Name_textField" destination="a2m-PE-EB7" id="XI5-Yk-IV7"/>
+                        <outlet property="PaySelect" destination="Z3i-mr-cYH" id="zzk-uP-lpJ"/>
+                        <outlet property="Payorincome" destination="3gu-YX-GA5" id="v23-EM-CkA"/>
+                        <outlet property="attribute" destination="UP3-ax-fFO" id="ZN9-UX-ymA"/>
+                        <outlet property="date" destination="tf9-T9-UzI" id="YJl-Ft-Nwu"/>
+                        <outlet property="item" destination="7yP-hG-KJT" id="6nt-zH-0GG"/>
+                        <outlet property="itemSelect" destination="X5g-dL-1jd" id="LUl-NJ-076"/>
+                        <outlet property="money" destination="sa8-iF-DOn" id="1Ai-X0-xvJ"/>
+                        <outlet property="returnButton" destination="oWE-qW-q6l" id="W8n-o7-ayc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozT-To-ouq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463.28125" y="33.984375"/>
+        </scene>
+        <!--Select Date-->
+        <scene sceneID="14S-vE-J1t">
+            <objects>
+                <viewController id="q5W-Dp-TYD" customClass="SelectDate" customModule="ChickenMoneyManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KRI-di-GoS">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xhj-6k-n3G">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="212"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="567983348.476915">
+                                    <!--2018-12-31 21:09:08 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-347115600">
+                                    <!--1990-01-01 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="zh_TW"/>
+                                <connections>
+                                    <action selector="myDatePickerAction:" destination="q5W-Dp-TYD" eventType="valueChanged" id="7aG-Zx-aW6"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kl4-4G-kgM">
+                                <rect key="frame" x="16" y="204" width="318" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="確定"/>
+                                <connections>
+                                    <segue destination="idY-Qg-dmc" kind="unwind" unwindAction="unwindFor:" id="9Ar-47-zH8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OD5-Z3-DnC" firstAttribute="bottom" secondItem="Kl4-4G-kgM" secondAttribute="bottom" constant="8" id="g0w-Lt-bcb"/>
+                            <constraint firstItem="Kl4-4G-kgM" firstAttribute="centerX" secondItem="KRI-di-GoS" secondAttribute="centerX" id="wuY-qx-DGZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OD5-Z3-DnC"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="350" height="250"/>
+                    <size key="freeformSize" width="350" height="250"/>
+                    <connections>
+                        <outlet property="SelectButton" destination="Kl4-4G-kgM" id="Bmr-a5-a1E"/>
+                        <outlet property="myDatePicker" destination="xhj-6k-n3G" id="cIC-7M-c15"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ots-cH-SHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="idY-Qg-dmc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1992" y="-172"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chick" width="64" height="64"/>
+        <image name="garbage" width="30" height="30"/>
+        <image name="piggy-bank" width="64" height="64"/>
+        <image name="speaker" width="64" height="64"/>
+        <image name="warning" width="64" height="64"/>
+        <image name="盤子" width="1300" height="653"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_ChickenMoneyManagerUITests {
+  umbrella header "Pods-ChickenMoneyManagerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
